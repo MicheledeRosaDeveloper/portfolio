@@ -1,12 +1,4 @@
 const Project = () => {
-  const project = {
-    title: "Project Title",
-    description: "Project Description",
-    image:
-      "https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg",
-    link: "Project Link",
-  };
-
   return (
     <>
       <div className="m-4 ">
