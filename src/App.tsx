@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Project from "./components/Project";
 import Timeline from "./components/Timeline";
 import Footer from "./components/Footer";
+import Skills from "./components/Skills";
 function App() {
   return (
     <>

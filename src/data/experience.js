@@ -1,32 +1,26 @@
 export default [
     {
-       year: 'Today',
-       title: 'YouTube Content Creator',
-       details: 
-          'My humble attempt at building my version of the digital world one step at a time by documenting my coding journey and creating software engineering and computer science content to help those coming behind me.',
+        year: '2024 - Presente',
+        title: 'Fullstack Developer ',
+        name: 'Consulenza EnergyTeam',
+        details: 'Sviluppo fullstack di un\'applicazione per l\'analisi e controllo dei consumi energetici aziendali a livello europeo. Utilizzo di Jhipster, Spring Boot, Angular 17, Docker, e altre tecnologie.'
     },
     {
-         year: 'Today',
-         title: 'Solo Indie Developer',
-         details:
-             "I'm a solo indie developer building software for myself and clients to showcase on YouTube. All coding projects are built from the ground up, from planning and designing all the way to solving real-life problems with code.",
-     },
-     {
-         year: '2019',
-         title: 'Software Engineer',
-         details:
-             'I helped build an enterprise application for a Fortune 500 company in an Agile team setting. Our tech stack consisted of TypeSciprt, Angular, Java, Gradle, and a handful of other languages and tools.',
-     },
-     {
-         year: '2018',
-         title: "Bachelor's Degree in Computer Science",
-         details:
-             'I pursued the knowledge that a computer science degree had to offer. I learned about computer architecture, computer science theory, an array of programming, and aspects of artificial intelligence.',
-     },
-     {
-         year: '2013',
-         title: 'First Line of Code',
-         details:
-             "I wrote my first line of real code that started this journey into digital craftsmanship that I never could've imagined, especially as someone who never saw themselves as anything other than a blue collar worker.",
-     },
- ]
+        year: '2022 - 2024',
+        title: 'Fullstack Developer ',
+        name: 'Consulenza NTTDATA',
+        details: 'Partecipazione all\'analisi e sviluppo fullstack di un\'applicazione di media streaming. Implementazione di una supply-chain di microservizi per la gestione dei contenuti. Utilizzo di ReactJS, GraphQL, AWS (Amplify, Cognito, Appsync, S3, Lambda, DynamoDB), SDVI.'
+    },
+    {
+        year: '2022',
+        title: 'Stage Fullstack Developer',
+        name: 'SI2001',
+        details: 'Sviluppo di un\'applicazione Rental Car per la gestione e prenotazione di auto. Implementazione di autenticazione, autorizzazione e gestione di ruoli utente. Utilizzo di Angular 11, Spring Boot, MySQL, JWT.'
+    },
+    {
+        year: '2021',
+        title: 'Stage Fullstack Developer ',
+        name: '3FEDIN',
+        details: 'Formazione nello sviluppo e progettazione di Web Application con focus su Angular e Java (Spring 4.0). Sviluppo di moduli Restful per applicazioni web e lavoro con database SQL e NoSQL (MongoDB).'
+    }
+]

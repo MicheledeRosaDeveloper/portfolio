@@ -7,9 +7,11 @@ interface TimelineItemProps {
 }
 
 const TimelineItem =  ({ year, title,details, index}: TimelineItemProps) => {
+  const timelineClass = index %2==0 ? 'timeline-end' : 'timeline-start';
+
     return (
       <>
-        <li>
+        <li key={index} >
           <div className="timeline-middle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +26,7 @@ const TimelineItem =  ({ year, title,details, index}: TimelineItemProps) => {
               />
             </svg>
           </div>
-          <div className="timeline-start mb-10 md:text-end max-w-72">
+          <div className={`${timelineClass} mb-10  max-w-96 border rounded-md p-4 shadow-lg`}>
             <time className="font-mono italic">{year}</time>
             <div className="text-lg font-black ">{title}</div>
             {details}

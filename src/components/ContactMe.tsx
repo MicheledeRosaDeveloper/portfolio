@@ -1,6 +1,6 @@
 const ContactForm = () => {
   return (
-    <div className="max-w-4xl mx-auto rounded shadow-lg m-10">
+    <div className="max-w-4xl mx-auto rounded shadow-lg m-10 border" id="contact">
       <h1 className="text-3xl font-bold text-center m-4">Contact Me</h1>
       <form className="flex justify-between items-start space-x-4 p-4">
         <div className="flex-1">
