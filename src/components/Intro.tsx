@@ -6,7 +6,7 @@ const Intro = () => {
 <div className="hero  min-h-screen">
   <div className="hero-content flex-col lg:flex-row">
     <img
-      src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
+      src="img/spiderman.webp"
       className="max-w-lg rounded-lg shadow-2xl" />
     <div className="m-10">
       <h1 className="text-5xl font-bold text-center" >Michele de Rosa</h1>

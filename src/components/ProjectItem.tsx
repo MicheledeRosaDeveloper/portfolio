@@ -13,6 +13,7 @@ const ProjectItem = ({
   description,
   stack,
 }: ProjectItemProps) => {
+  console.log(imgUrl);
   return (
     <>
       <a href={link}>

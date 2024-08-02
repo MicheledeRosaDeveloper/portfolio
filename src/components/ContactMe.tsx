@@ -1,8 +1,33 @@
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 const ContactForm = () => {
+  const form = useRef();
+
+
+
+  const sendEmail = (e) => {
+    console.log(form.current);
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_t2qfg0s', 'template_ljekx77', form.current, {
+        publicKey: '3asjYRXhA8oV2Sfb7',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
   return (
     <div className="max-w-4xl mx-auto rounded shadow-lg m-10 border" id="contact">
       <h1 className="text-3xl font-bold text-center m-4">Contact Me</h1>
-      <form className="flex justify-between items-start space-x-4 p-4">
+      <form ref={form} onSubmit={sendEmail} className="flex justify-between items-start space-x-4 p-4">
         <div className="flex-1">
           <div className="-mx-2">
             <div className="px-2">
@@ -15,7 +40,13 @@ const ContactForm = () => {
                 >
                   <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
                 </svg>
-                <input type="text" className="grow" placeholder="Username" />
+                <input
+                  type="text"
+                  id="user_name"
+                  name="user_name"
+                  required
+                  className="grow" placeholder="Username" 
+                />
               </label>
             </div>
           </div>
@@ -42,7 +73,9 @@ const ContactForm = () => {
         </div>
       </form>
       <div className="flex justify-end p-5">
-      <button className="btn btn-active btn-accent w-32">Invia</button>
+        <button type="submit" className="btn btn-active btn-accent w-32" >
+          Invia
+        </button>
       </div>
     </div>
   );
